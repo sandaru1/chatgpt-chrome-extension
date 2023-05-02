@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  },
+  "scripts": {
+    "build": "npx tailwindcss -i src/options/tailwind.css -o src/options/options.css -m",
+    "dev": "npx tailwindcss -i src/options/tailwind.css -o src/options/options.css --watch"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "ChatGPT Rewriter",
+  "description": "Use ChatGPT to rewrite your texts",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["contextMenus", "storage","activeTab","scripting"],
+  "background": {
+    "service_worker": "src/background.js",
+    "type": "module"
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["src/content.js"],
+    "all_frames": true,
+    "match_about_blank": true
+  }],
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "options_page": "src/options/options.html"
+}
