@@ -3,7 +3,7 @@
     "tailwindcss": "^3.3.2"
   },
   "scripts": {
-    "build": "npx tailwindcss -i src/options/tailwind.css -o src/options/options.css -m",
+    "build": "npx tailwindcss -i src/options/tailwind.css -o src/options/options.css -m && mkdir -p build && cp -r src icons manifest.json build",
     "dev": "npx tailwindcss -i src/options/tailwind.css -o src/options/options.css --watch"
   }
 }
