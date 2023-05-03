@@ -3,7 +3,7 @@
   "description": "Use ChatGPT to rewrite your texts",
   "version": "1.0",
   "manifest_version": 3,
-  "permissions": ["contextMenus", "storage","activeTab","scripting"],
+  "permissions": ["contextMenus", "storage","activeTab"],
   "background": {
     "service_worker": "src/background.js",
     "type": "module"
