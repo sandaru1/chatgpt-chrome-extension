@@ -1,4 +1,7 @@
 # ChatGPT Rewriter - Chrome Extension
+
+You can install the extension from here : https://chrome.google.com/webstore/detail/labihkcmhekblajdihbblcgcapbkckie
+
 This extension adds two context menus to editable text in Chrome. The text is processed using the the ChatGPT API and replaced in the page.
 
 The extension works with input, textarea fields and editable content.
